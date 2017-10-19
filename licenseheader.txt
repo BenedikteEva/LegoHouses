@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}BenedikteEva
+${licensePrefix}Lego Houses
+<#if licenseLast??>
+${licenseLast}
+</#if>

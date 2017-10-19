@@ -1,0 +1,44 @@
+/*
+BenedikteEva
+Lego Houses
+*/
+/* 
+    Created on : 15-10-2017, 16:36:34
+    Jeg har lavet lidt css men har forsøgt at holde det til at det skal være overskueligt at se på
+    hvis den der tjekker opgaven skulle få den mærkværdige ide at køre programmet. 
+*/
+
+div {
+
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
+}
+
+table{
+    border: 1px solid black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+footer{
+     background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+      border: 5px solid gray;
+}
