@@ -58,7 +58,7 @@
                 %>
 
             </form>
-                
+                      
             <form  name="orderscustomer" action="FrontController" method="POST">
                 <button type="submit" value="action" name="orderscustomer" id="myButton2">Se alle dine ordrer</button>
                 <input type="hidden" name="command" value="orderscustomer">

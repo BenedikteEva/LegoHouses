@@ -16,8 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-
- @author kasper
+ @author kasper changes made BenedikteEva 
  */
 @WebServlet( name = "FrontController", urlPatterns = { "/FrontController" } )
 public class FrontController extends HttpServlet {
@@ -41,7 +40,7 @@ public class FrontController extends HttpServlet {
             request.setAttribute("view", view);
             request.getRequestDispatcher( view + ".jsp" ).forward( request, response );
         } catch ( BenedikteEvasNewException ex ) {
-            request.setAttribute( "error", ex.getMessage() );
+            request.setAttribute( "error", ex.getMessage());
             request.getRequestDispatcher( "index.jsp" ).forward( request, response );
         }
     }

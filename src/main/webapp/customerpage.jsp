@@ -82,7 +82,7 @@
                 <%  if (request.getParameter("odetails") == null) {
 
                     } else {
-                        out.println("<a>" + (OdetailsEntity) request.getAttribute("odetails") + "</a>");
+                        out.println("<a>" + (OdetailsEntity) session.getAttribute("odetails") + "</a>");
                     }
                 %>
             </form>
@@ -106,6 +106,9 @@
             </form>
 
         </div>
+        
+                
+                
         <footer >
             <p>Made by BenedikteEva 2017</p>
         </footer>     

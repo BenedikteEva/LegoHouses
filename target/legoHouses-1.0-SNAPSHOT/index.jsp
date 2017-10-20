@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 09-10-2017, 22:08:31
-    Author     : BenedikteEva
+    Author     : Kasper/ BenedikteEva
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

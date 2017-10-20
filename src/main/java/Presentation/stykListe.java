@@ -6,11 +6,9 @@
 package Presentation;
 
 import BusinessLayer.BenedikteEvasNewException;
-import BusinessLayer.LogicFacade;
 import BusinessLayer.OdetailsEntity;
 import BusinessLayer.StykCalculator;
 import BusinessLayer.User;
-import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -24,7 +22,6 @@ public class stykListe extends Command {
     @Override
     String execute(HttpServletRequest request, HttpServletResponse response) throws BenedikteEvasNewException {
         HttpSession session = request.getSession();
-
         User user = (User) session.getAttribute("user");
         OdetailsEntity ode = (OdetailsEntity) session.getAttribute("odetails");
         StykCalculator sc = new StykCalculator();

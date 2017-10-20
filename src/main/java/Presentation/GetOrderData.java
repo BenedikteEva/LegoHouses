@@ -6,9 +6,7 @@ package Presentation;
 
 import BusinessLayer.BenedikteEvasNewException;
 import BusinessLayer.LogicFacade;
-import BusinessLayer.OdetailsEntity;
 import BusinessLayer.OrderData;
-import BusinessLayer.OrderEntity;
 import BusinessLayer.StykCalculator;
 
 import BusinessLayer.User;

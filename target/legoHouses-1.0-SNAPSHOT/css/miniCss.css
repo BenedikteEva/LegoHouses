@@ -42,3 +42,10 @@ footer{
     text-align: center;
       border: 5px solid gray;
 }
+p{
+     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

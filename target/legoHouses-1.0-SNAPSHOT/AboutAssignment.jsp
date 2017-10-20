@@ -30,8 +30,10 @@
                 </ul> 
             </nav>
            
-            Link til programmet på min server: <a href="http://46.101.179.58/legoHouses-1.0-SNAPSHOT/FrontController"</a>
-            <br><br>
+            
+            <br>
+           
+            <br>
             
             <p>  Her lige en kort beskrivelse af hvad jeg har undladt at gøre i det forhåndenværende
                 forsøg på at løse Legohus opgaven:<br><br>
@@ -42,11 +44,12 @@
                 2. Forbandt typer: der er et vist antal muligheder for at lave en velkonstrueret bygning med 3 typer klodser.
                 og med velkonstrueret mener jeg at de eneste steder hvor legoklodsernes sider må flugte er i enderne (og yder og indervæg). 
                 <br><br>
-                Jeg har valgt ikke at lave den nødvendige matematik, da dette ville tage noget tid så jeg har bare nøjes med 
-                3 typer af forbandt, som  alt efter hvordan man vælger at bygge, ville kunne sættes i forskellige mønstre.
+                Jeg har valgt at lave en simplpificeret matematik, da dette ellers ville tage noget tid fra programmeringen 
+                så jeg har bare nøjes med 3 typer af forbandt, som  alt efter hvordan man vælger at bygge, ville kunne sættes i forskellige mønstre.
                 <br><br>
                 I det øjeblik man i det ene lag bygger med uret og i det efterfølgende mod uret vil lagene blive forskudt i 
                 hvis de klodstyper man starter med er forskellige i hvert lag. <br>
+                Ellers hvis det er en simpel forbandttype med kun 2x4 klodser skiftes mellem siderne når man starter med at lægge den første klods i et lag.
                 Jeg har ikke brugt tid på at beskrive mønstrene. <br><br>
                 
                 3. Det forventes i opgaven at der er en facade mellem præsentations og forretningslag og evt. mellem 
@@ -100,7 +103,7 @@
                så man ikke hele tiden skal gætte sig til hvordan man strukturerer sin kode.
                <br>
                Det var en vældig hyggelig opgave, med en god sværhedsgrad ud fra mit nuværende niveau. 
-               
+               <br>
             </p>
               
         
