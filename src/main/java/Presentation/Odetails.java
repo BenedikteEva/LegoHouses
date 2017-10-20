@@ -9,6 +9,7 @@ import BusinessLayer.LogicFacade;
 import BusinessLayer.BenedikteEvasNewException;
 import BusinessLayer.OdetailsEntity;
 import BusinessLayer.OrderEntity;
+import BusinessLayer.StykCalculator;
 import BusinessLayer.User;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -31,7 +32,8 @@ public class Odetails extends Command {
         int width = Integer.parseInt(request.getParameter("width"));
         int height = Integer.parseInt(request.getParameter("height"));
         int forbandt = Integer.parseInt(request.getParameter("type"));
-
+ 
+        
         BusinessLayer.OdetailsEntity odetails = LogicFacade.updateOdetails(order_id, length, width, height, forbandt);
         order_id=odetails.getOrder_id();
         BusinessLayer.OrderEntity order = LogicFacade.placeOrder(order_id, user.getUser_id());
@@ -39,7 +41,6 @@ public class Odetails extends Command {
         session.setAttribute("odetails", odetails);
         request.setAttribute("odetails", odetails);
         return user.getAdminStatus() + "page";
-
     }
 
 }

@@ -20,9 +20,14 @@ import javax.servlet.http.HttpSession;
 public class stykListe extends Command {
 
     @Override
-    String execute(HttpServletRequest request, HttpServletResponse response) throws BenedikteEvasNewException {
+    String execute(HttpServletRequest request, HttpServletResponse response) throws BenedikteEvasNewException, NullPointerException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
+        
+        
+        
+        
+        
         OdetailsEntity ode = (OdetailsEntity) session.getAttribute("odetails");
         StykCalculator sc = new StykCalculator();
         int order_id = ode.getOrder_id();
@@ -31,8 +36,9 @@ public class stykListe extends Command {
         int width = ode.getWidth();
         int height = ode.getHeight();
         int forbandt = ode.getBondtype();
+       
         sc.forbandtChoice(forbandt, height, length, width, request);
         return user.getAdminStatus() + "page";
-    }
+ 
 
-}
+}}
