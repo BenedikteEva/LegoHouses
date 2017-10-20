@@ -64,8 +64,8 @@
                 <br>
                 4. Jeg kunne godt tænke mig at nå at smide alle jsp siderne tilbage i webinfo undtaget index.jsp. 
                 <br>
-                5. Der r et problem med at trykke på se styklisteknappen inden man har trykket på udfør. Det er ikke lykkedes mig at gøre noget ved det og ved ikke hvorfor.
-                samme problem på admin siderne med at markere noget som afsendt der ikke er der. Jeg har lavet noget med numberformat exceptio og nullpointerexceptions for at håndtere probmet
+                5. Der var et problem med at trykke på se styklisteknappen inden man har trykket på udfør, 
+                samme problem på admin siderne med at markere noget som afsendt der ikke er der. Jeg har lavet noget med numberformat og nullpointerexceptions for at håndtere problemet
                 Det virker men giver lidt bøvl.
              
                <br><br>
