@@ -44,7 +44,7 @@
                 </ul> 
             </nav>
 
-        
+
 
 
             <h1>Du er logget ind som:  <%out.println(session.getAttribute("username"));%></h1>
@@ -91,10 +91,11 @@
 
                 <button type="submit" value="action" name="stykliste">Se stykliste for huset</button>  
                 <br>
+           
 
 
                 <% if (request.getParameter("stykliste") == null) {
-                    out.println("");
+                        out.println("");
                     } else {
 
                         out.println("<a>Stykliste for ordrenummer:" + request.getAttribute("order_id") + "  "
@@ -106,9 +107,9 @@
             </form>
 
         </div>
-        
-                
-                
+
+
+
         <footer >
             <p>Made by BenedikteEva 2017</p>
         </footer>     
