@@ -20,8 +20,7 @@ public class aboutAssignment extends Command {
     String execute(HttpServletRequest request, HttpServletResponse response) throws BenedikteEvasNewException {
        HttpSession session = request.getSession();
        User user = (User) session.getAttribute("user");
-    session.setAttribute( "admin", user.getAdminStatus());
-        session.setAttribute ("username", user.getUsername());
+
   
         return "AboutAssignment";
      

@@ -111,6 +111,9 @@
               
         
       </div>
-         <p>Made by BenedikteEva 2017</p>
+            <footer >
+             <p>Made by BenedikteEva 2017</p>
+        </footer>        
+                
     </body>
 </html>

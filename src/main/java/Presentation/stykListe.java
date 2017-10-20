@@ -23,11 +23,7 @@ public class stykListe extends Command {
     String execute(HttpServletRequest request, HttpServletResponse response) throws BenedikteEvasNewException, NullPointerException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        
-        
-        
-        
-        
+
         OdetailsEntity ode = (OdetailsEntity) session.getAttribute("odetails");
         StykCalculator sc = new StykCalculator();
         int order_id = ode.getOrder_id();

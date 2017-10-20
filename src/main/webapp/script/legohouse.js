@@ -1,7 +1,0 @@
-/* 
- * BenedikteEva
- * Lego Houses
- */
-
-
-

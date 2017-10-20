@@ -26,7 +26,7 @@ public class backCustomer extends Command {
         } if(user.getAdminStatus()=="customer"){
              return "customerpage";
         }else{
-            return "index";
+            return "customerpage";
         }
     }
 }
