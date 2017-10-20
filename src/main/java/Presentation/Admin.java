@@ -5,6 +5,7 @@
 package Presentation;
 
 import BusinessLayer.BenedikteEvasNewException;
+import BusinessLayer.LogicFacade;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,9 +17,10 @@ public class Admin extends Command{
 
     @Override
     String execute(HttpServletRequest request, HttpServletResponse response) throws BenedikteEvasNewException {
+
+        int order_id = Integer.parseInt(request.getParameter("order_id"));
+        LogicFacade.updateShippedStatus(order_id);
         
-        int user_id =  Integer.parseInt(request.getParameter("user_id"));
-        request.setAttribute("user_id", user_id);
         return "ordersadminpage";
    
     }

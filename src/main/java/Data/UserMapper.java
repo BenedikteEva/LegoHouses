@@ -7,7 +7,6 @@ package Data;
 
 import BusinessLayer.User;
 import BusinessLayer.BenedikteEvasNewException;
-import BusinessLayer.LoginException;
 import BusinessLayer.OdetailsEntity;
 import BusinessLayer.OrderEntity;
 import java.sql.Connection;

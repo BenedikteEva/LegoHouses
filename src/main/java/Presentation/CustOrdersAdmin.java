@@ -7,10 +7,8 @@ package Presentation;
 
 import BusinessLayer.BenedikteEvasNewException;
 import BusinessLayer.LogicFacade;
-import BusinessLayer.OdetailsEntity;
 import BusinessLayer.OrderEntity;
 import BusinessLayer.RendOrderUtil;
-import BusinessLayer.User;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,7 +25,7 @@ public class CustOrdersAdmin extends Command {
 
         HttpSession session = request.getSession();
        
-        int user_id = Integer.parseInt(request.getParameter("user_idc"));
+        int user_id = Integer.parseInt(request.getParameter("user_id"));
         List<OrderEntity> orders = LogicFacade.getAllOrderIdByUserId(user_id);
         String orderList = RendOrderUtil.OrderTabel(orders);
         request.setAttribute("orders", orders);

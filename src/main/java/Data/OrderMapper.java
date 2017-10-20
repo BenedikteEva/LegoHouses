@@ -10,7 +10,6 @@ import BusinessLayer.OdetailsEntity;
 import BusinessLayer.OrderData;
 import BusinessLayer.OrderEntity;
 import BusinessLayer.User;
-import Presentation.Odetails;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,8 +17,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -99,13 +96,13 @@ public class OrderMapper {
         }
     }
 
-    public static void updateShippedStatus() throws BenedikteEvasNewException {
+    public static void updateShippedStatus(int order_id )throws BenedikteEvasNewException {
         try {
-            OrderEntity od = null;
+          
             Connection con = DBConnector.connection();
-            String sql = "update orderlist set sendtstatus=? where order_id=" + od.getOrder_id();
+            String sql = "UPDATE orderlist SET sendtstatus='afsendt' where order_id=" + order_id;
             PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, od.isShipped());
+         
             ps.executeUpdate();
 
         } catch (ClassNotFoundException | SQLException ex) {
@@ -147,12 +144,6 @@ public class OrderMapper {
 
     }
 
-    public static void main(String[] args) throws BenedikteEvasNewException {
-        User user = new User();
-        OdetailsEntity od = new OdetailsEntity();
-        OrderMapper om = new OrderMapper();
-
-        System.out.println(om.getAllOdetailsbyOrderId(2, 2));
-    }
+   
 
 }

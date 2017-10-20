@@ -6,8 +6,9 @@ package BusinessLayer;
  */
 public class BenedikteEvasNewException extends Exception {
 
-    public BenedikteEvasNewException(String whatDoesMsgMeans) {
-        super(whatDoesMsgMeans);
+    public BenedikteEvasNewException(String ErrorMsg) {
+        super(ErrorMsg);
+      
     }
     
 

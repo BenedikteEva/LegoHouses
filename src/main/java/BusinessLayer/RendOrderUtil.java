@@ -20,7 +20,7 @@ public class RendOrderUtil {
 
         for (OrderEntity o : customerOrders) {
 
-            sb.append("<tr><form name=\"admin\" action=\"FrontController\" method=\"post\">");
+            sb.append("<tr><form name=\"admin\" action=\"FrontController\" method=\"POST\">");
             sb.append("<tr> <input type=\"hidden\" name=\"command\" value=\"admin\">");
             sb.append("<td>").append(o.getUser_id()).append("</td>");
             sb.append("<td>").append(o.getOrder_id()).append("</td>");

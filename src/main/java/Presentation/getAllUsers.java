@@ -28,7 +28,7 @@ public class getAllUsers extends Command {
         String getusers = RendUserListUtil.UserList(users);
         session.setAttribute("getusers", getusers);
 
-        return user.getAdminStatus()+"page";
+        return "employeepage";
 
     }
 

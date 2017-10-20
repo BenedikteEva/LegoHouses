@@ -50,7 +50,7 @@ public class LogicFacade {
     }
 
     
-    public static void updateShippedStatus() throws BenedikteEvasNewException {
-        OrderMapper.updateShippedStatus();
+    public static void updateShippedStatus(int order_id) throws BenedikteEvasNewException {
+        OrderMapper.updateShippedStatus(order_id);
     }
 }

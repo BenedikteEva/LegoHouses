@@ -17,8 +17,10 @@ abstract class Command {
 
     private static void initCommands() {
         commands = new HashMap<>();
+        
         commands.put("login", new Login());
         commands.put("logout", new LogOut());
+        commands.put("errormsg", new ErrorMsg());
         commands.put("register", new Register());
         commands.put("odetails", new Odetails());
         commands.put("stykliste", new stykListe());
@@ -26,6 +28,7 @@ abstract class Command {
         commands.put("orderscustomer", new OrdersCustomer());
         commands.put("custordersadmin", new CustOrdersAdmin());
         commands.put("aboutassignment", new aboutAssignment());
+        commands.put("setshippedstatus", new setShippedStatus());
         commands.put("getorderdata", new GetOrderData());
         commands.put("getallusers", new getAllUsers());
         commands.put("admin", new Admin());

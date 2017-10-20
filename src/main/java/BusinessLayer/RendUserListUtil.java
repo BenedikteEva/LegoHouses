@@ -25,8 +25,9 @@ public class RendUserListUtil {
             sb.append("<td>").append(u.getEmail()).append("</td>");
             sb.append("<td>").append(u.getUser_id()).append("</td>");
             sb.append("<td>").append(u.getUsername()).append("</td>");
-            sb.append("<td> \n <input type=\"radio\" checked=\"checked\" name=\"user_idc\" value=\"" + u.getUser_id()+ "\"><br>\n\n</td>");
+            sb.append("<td> \n <input type=\"radio\" checked=\"checked\" name=\"user_id\" value=\"").append(u.getUser_id()).append("\"><br>\n\n</td>");
         }
+       
         sb.append("</table>\n");
         return sb.toString();
 
