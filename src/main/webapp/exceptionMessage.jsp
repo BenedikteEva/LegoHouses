@@ -12,8 +12,31 @@
         <title>Error page</title>
     </head>
     <body>
-        <h1>An error occurred please do something different!!</h1>
+          <nav> 
+                <ul>
+                    <form name="logout" action="FrontController" method="POST">
+                        <input type="hidden" name="command" value="logout">
+                        <li><input type="submit" value="Log ud" name="logout">Log ud</a></li>
+                    </form>
 
+                    <form name="backcustomer" action="FrontController" method="POST">
+                        <input type="hidden" name="command" value="backcustomer">
+                        <li><input type="submit" value="Gå tilbage" name="backcustomer">Gå tilbage </a></li>
+                    </form>
+
+                    <form name="aboutassignment" action="FrontController" method="POST">
+                        <input type="hidden" name="command" value="aboutassignment">
+                        <li><input type="submit" value="Om opgaven" name="aboutassignment">om opgaven</a></li>
+                    </form>
+                </ul> 
+            </nav>
+        
+        
+        <h1>Der var en fejl i systemet. Være sød at gøre noget andet!!</h1>
+        <a href="customerpage.jsp">bestil legohuse</a>
+        <a href="employeepage.jsp">Behandl dine kunder venligt</a>
+        <p>Okay måske ikke helt optimalt men i det mindste bliver man ikke smidt af når man får en nullpointer eller numberformat exception</p>
+        
         <footer >
           <p>Made by BenedikteEva 2017</p>
         </footer>     

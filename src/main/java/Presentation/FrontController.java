@@ -32,16 +32,16 @@ public class FrontController extends HttpServlet {
      * @throws BusinessLayer.BenedikteEvasNewException
      */
     protected void processRequest( HttpServletRequest request, HttpServletResponse response )
-            throws ServletException, IOException, BenedikteEvasNewException, NullPointerException {
+            throws ServletException, IOException, BenedikteEvasNewException, NullPointerException , NumberFormatException{
         try {
             Command action = Command.from( request );
             
             String view = action.execute( request, response );
             request.setAttribute("view", view);
             request.getRequestDispatcher( view + ".jsp" ).forward( request, response );
-        } catch ( BenedikteEvasNewException | NullPointerException ex ) {
+        } catch ( BenedikteEvasNewException | NullPointerException | NumberFormatException ex ) {
             request.setAttribute( "error", ex.getMessage());
-            request.getRequestDispatcher( "index.jsp" ).forward( request, response );
+            request.getRequestDispatcher( "exceptionMessage.jsp" ).forward( request, response );
         }
     }
 

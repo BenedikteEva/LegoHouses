@@ -46,7 +46,7 @@
              
                  <% out.println("<a>" + (String) request.getAttribute("orderList") + "</a>");%>
             
-              <input type="submit" value="Sæt markerede ordre som afsendt" name="setshippedstatus"></a>
+              <input type="submit" value="Sæt markeret ordre som afsendt" name="setshippedstatus"></a>
             </form>
 
 
