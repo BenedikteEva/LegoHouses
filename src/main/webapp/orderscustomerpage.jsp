@@ -68,7 +68,7 @@
         </div>
                 
           <footer >
-             <p>Made by BenedikteEva 2017</p>
+          Made by BenedikteEva 2017
         </footer>        
                 
     </body>

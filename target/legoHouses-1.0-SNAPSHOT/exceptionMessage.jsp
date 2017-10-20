@@ -38,7 +38,7 @@
         <p>Okay måske ikke helt optimalt men i det mindste bliver man ikke smidt af når man får en nullpointer eller numberformat exception</p>
         
         <footer >
-          <p>Made by BenedikteEva 2017</p>
+        Made by BenedikteEva 2017
         </footer>     
 
     </body>
