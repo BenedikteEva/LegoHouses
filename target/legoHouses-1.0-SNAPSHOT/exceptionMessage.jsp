@@ -33,7 +33,7 @@
         
         
         <h1>Der var en fejl i systemet. Være sød at gøre noget andet!!</h1>
-        <a href="customerpage.jsp">bestil legohuse</a>
+        <a href="customerpage.jsp">Bestil legohuse</a>
         <a href="employeepage.jsp">Behandl dine kunder venligt</a>
         <p>Okay måske ikke helt optimalt men i det mindste bliver man ikke smidt af når man får en nullpointer eller numberformat exception</p>
         

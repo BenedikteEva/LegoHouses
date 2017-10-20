@@ -25,7 +25,7 @@
 
                     <form name="backcustomer" action="FrontController" method="POST">
                         <input type="hidden" name="command" value="backcustomer">
-                        <li><input type="submit" value="Bestil huse" name="backcustomer">Bestil flere huse</a></li>
+                        <li><input type="submit" value="Back" name="backcustomer">Bestil flere huse</a></li>
                     </form>
                 </ul> 
             </nav>
@@ -44,7 +44,7 @@
                 2. Forbandt typer: der er et vist antal muligheder for at lave en velkonstrueret bygning med 3 typer klodser.
                 og med velkonstrueret mener jeg at de eneste steder hvor legoklodsernes sider må flugte er i enderne (og yder og indervæg). 
                 <br><br>
-                Jeg har valgt at lave en simplpificeret matematik, da dette ellers ville tage noget tid fra programmeringen 
+                Jeg har valgt at lave en simplificeret matematik, da dette ellers ville tage noget tid fra programmeringen 
                 så jeg har bare nøjes med 3 typer af forbandt, som  alt efter hvordan man vælger at bygge, ville kunne sættes i forskellige mønstre.
                 <br><br>
                 I det øjeblik man i det ene lag bygger med uret og i det efterfølgende mod uret vil lagene blive forskudt i 
@@ -93,7 +93,8 @@
                Ingen redirect: yep (da jeg har brugt frontcontrolleren konsekvent er det kun i den det har været nødvendigt med requestdispatcher.)<br>
                Styklister beregnes i forretningslaget: yep<br>
                Exception håndtering: yep har en exception som bliver kastet fra mapperne. <br>
-               Specialiseret exception: nope.<br>
+               Specialiseret exception: hmm har lavet lidt omkring nullpointer og numberformat exception så man ikke smides af.
+               Helt perfekt er det nu ikke. Kunderne har mulighed for at sætte deres ordre som afsendt. Hvilket de nok ikke får meget ud af.<br>
                Frontcontroller: yep<br>
                Døre og vinduer: nope<br>
          

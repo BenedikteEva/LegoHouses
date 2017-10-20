@@ -25,7 +25,7 @@
 
                     <form name="backcustomer" action="FrontController" method="POST">
                         <input type="hidden" name="command" value="backcustomer">
-                        <li><input type="submit" value="Bestil huse" name="backcustomer">Bestil flere huse</a></li>
+                        <li><input type="submit" value="Back" name="backcustomer">Bestil flere huse</a></li>
                     </form>
                 </ul> 
             </nav>

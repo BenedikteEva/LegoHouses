@@ -21,10 +21,12 @@ public class backCustomer extends Command {
         User user = (User) session.getAttribute("user");
         session.setAttribute("admin", user.getAdminStatus());
         session.setAttribute("username", user.getUsername());
-        if (user.getAdminStatus() != "customer") {
+        if (user.getAdminStatus() == "employee") {
            return "employeepage";
-        } else {
+        } if(user.getAdminStatus()=="customer"){
              return "customerpage";
+        }else{
+            return "index";
         }
     }
 }
