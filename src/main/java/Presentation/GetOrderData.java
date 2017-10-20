@@ -29,7 +29,7 @@ public class GetOrderData extends Command {
         int god = Integer.parseInt(request.getParameter("order_id"));
         OrderData od = LogicFacade.getOdetialsByOrderID(user.getUser_id(), god);
         request.setAttribute("od", od);
-
+      
         StykCalculator sc = new StykCalculator();
         
         int length = od.getLength();

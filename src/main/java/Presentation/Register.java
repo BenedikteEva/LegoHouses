@@ -27,10 +27,7 @@ public class Register extends Command {
             session.setAttribute( "user", user );
             session.setAttribute("username", username);
             session.setAttribute( "adminstatus", user.getAdminStatus());
-            return (user.getAdminStatus()+"page"); // somethin didnt work with getting adminstatus it kep returning null
-            // though theres a defualt in the database that says 'customer' and it is in the databsae and the 
-            // get registered but it says that user.getAdminStatus is null and since I  dont register emplyoees 
-            // I just return customerpage since thats where we have to go. No lost sleep over 
+            return (user.getAdminStatus()+"page"); 
            
         } else {
             throw new BenedikteEvasNewException( "the two passwords did not match" );

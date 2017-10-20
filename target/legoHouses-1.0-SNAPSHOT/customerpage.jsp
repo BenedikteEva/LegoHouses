@@ -94,7 +94,7 @@
 
 
                 <% if (request.getParameter("stykliste") == null) {
-
+                    out.println("");
                     } else {
 
                         out.println("<a>Stykliste for ordrenummer:" + request.getAttribute("order_id") + "  "

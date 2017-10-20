@@ -6,7 +6,7 @@
 
 
 function myFunction() {
-    var x = document.getElementById("myButton1");
+    var x = document.getElementById("myButton2");
     if (x.style.display === "none") {
         x.style.display = "button";
     } else {
@@ -14,8 +14,4 @@ function myFunction() {
     }
 }
 
-$(document).ready(function(){
-    $("form.form-once-only").submit(function () {
-        $(this).find(':button1').prop('disabled', true);
-    });
-}
+

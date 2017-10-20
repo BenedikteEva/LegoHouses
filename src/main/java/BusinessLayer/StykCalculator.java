@@ -134,6 +134,7 @@ public class StykCalculator {
             request.setAttribute("stykliste", stykliste);
            
         }
+      
     }
     
 

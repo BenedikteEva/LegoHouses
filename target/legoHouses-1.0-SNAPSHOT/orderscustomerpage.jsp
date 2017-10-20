@@ -42,14 +42,14 @@
 
             <h1>Tidligere ordrer for: <%out.println(session.getAttribute("username"));%></h1>
             
-              <form name="getorderdata" action="FrontController" method="POST">
+              <form  name="getorderdata" action="FrontController" method="POST">
                 <input type="hidden" name="command" value="getorderdata">
 
                 <% if (request.getParameter("getorderdata") == null) {
                        out.println("<a>" + request.getAttribute("orderList") + "</a>");
                 %>
               
-                <button   type="submit"  value="action" name="getorderdata"  >Se stykliste</button>
+                <button   type="submit"   value="action" name="getorderdata" id="myButton2" >Se stykliste</button>
    
                 <%} else {
                         out.println("<a>" + (OrderData) request.getAttribute("od") + "</a>");

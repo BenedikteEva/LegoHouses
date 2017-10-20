@@ -32,8 +32,11 @@ public class OrdersCustomer extends Command {
         request.setAttribute("orders", orders);
         String orderList = RendOrderUtil.OrderTabel(orders);
         request.setAttribute("orderList", orderList);
-        return "orderscustomerpage";
-
+        if (orders.isEmpty()) {
+            return "customerpage";
+        } else {
+            return "orderscustomerpage";
+        }
     }
 
 }
